@@ -24,6 +24,12 @@ public class BoardController {
         model.addAttribute("list",list);
         return "list";
     }
+    @RequestMapping(value = "/view/{id}", method = RequestMethod.GET)
+    public String viewBoard(@PathVariable("id") int id, Model model) {
+        BoardVO boardVO = boardService.getBoard(id);
+        model.addAttribute("boardVO", boardVO);
+        return "view";
+    }
     @RequestMapping(value="/add", method = RequestMethod.GET)
     public String addPost(){
         return "addpostform";

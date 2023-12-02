@@ -1,4 +1,6 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <%--
   Created by IntelliJ IDEA.
   User: songsan
@@ -22,7 +24,7 @@
     <tr><td>내용</td><form:textarea path="content" cols="50" row="5" /></tr>
   </table>
   <input type="submit" value="수정하기"/>
-  <input type="button" value="취소하기" onclick="history"/>
+  <button type="button" onclick="location.href='../list'">목록보기</button>
 </form:form>
 </body>
 </html>

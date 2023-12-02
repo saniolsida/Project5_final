@@ -34,7 +34,7 @@
             <tr>
                 <td>${u.seq}</td>
                 <td>${u.category}</td>
-                <td>${u.title}</td>
+                <td ><a href="view/${u.seq}">${u.title}</a></td>
                 <td>${u.writer}</td>
                 <td>${u.content}</td>
                 <td>${u.regdate}</td>

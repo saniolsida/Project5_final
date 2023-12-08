@@ -18,10 +18,14 @@
 <form:form modelAttribute="boardVO" method="POST" action="../editok">
   <form:hidden path="seq"/>
   <table id ="edit">
-    <tr><td>카테고리</td><td><form:input path="category" /></td></tr>
-    <tr><td>제목</td><<td><form:input path="title"/> </td></tr>
-    <tr><td>작성자</td><td><form:input path="writer"/></td></tr>
-    <tr><td>내용</td><form:textarea path="content" cols="50" row="5" /></tr>
+    <tr><td>Username</td><<td><form:input path="username"/> </td></tr>
+    <tr><td>Phone Number</td><<td><form:input path="phone"/> </td></tr>
+    <tr><td>Price</td><<td><form:input path="price"/> </td></tr>
+    <tr><td>Title</td><<td><form:input path="title"/> </td></tr>
+    <tr><td>Writer</td><td><form:input path="writer"/></td></tr>
+    <tr><td>Publisher</td><<td><form:input path="publisher"/> </td></tr>
+    <tr><td>Publication Date</td><<td><form:input path="publication_date"/> </td></tr>
+    <tr><td>Content</td><form:textarea path="content" cols="50" row="5" /></tr>
   </table>
   <input type="submit" value="수정하기"/>
   <button type="button" onclick="location.href='../list'">목록보기</button>

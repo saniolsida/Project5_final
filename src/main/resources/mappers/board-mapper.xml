@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="BoardDAO">
+    <insert id="insertBoard">
+        insert into BOOK (title, writer, username, content, publisher, publication_date, price, phone)
+        values
+        (#{title},  #{writer}, #{username}, #{content}, #{publisher}, #{publication_date}, #{price}, #{phone})
+    </insert>
+    <update id="updateBoard">
+        update BOOK
+        set title=#{title}, content=#{content}, writer=#{writer}, username=#{username}, publisher=#{publisher},
+            publication_date=#{publication_date}, price=#{price}, phone=#{phone}
+        where seq=#{seq}
+    </update>
+    <delete id="deleteBoard">
+        delete from BOOK where seq=#{seq}
+    </delete>
+    <select id="getBoardList" resultType="board">
+        select * from BOOK order by seq desc
+    </select>
+    <select id="getBoard" resultType="board">
+        select * from BOOK where seq = #{seq}
+    </select>
+</mapper>

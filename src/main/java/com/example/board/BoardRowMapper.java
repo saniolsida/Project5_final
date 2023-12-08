@@ -13,8 +13,13 @@ class BoardRowMapper implements RowMapper<BoardVO> {
         one.setTitle(rs.getString("title"));
         one.setWriter(rs.getString("writer"));
         one.setRegdate(rs.getDate("regdate"));
-        one.setCategory(rs.getString("category"));
         one.setContent(rs.getString("content"));
+
+        one.setPhone(rs.getString("phone"));
+        one.setPrice(rs.getString("price"));
+        one.setUsername(rs.getString("username"));
+        one.setPublisher(rs.getString("publisher"));
+        one.setPublication_date(rs.getString("publication_date"));
         return one;
     }
 

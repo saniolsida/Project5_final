@@ -7,18 +7,22 @@
 <h1>Detail</h1>
 <table modelAttribute="boardVO">
   <tr>
-    <th>ID</th>
-    <th>Category</th>
     <th>Title</th>
     <th>Writer</th>
+    <th>Publisher</th>
+    <th>Publication Date</th>
+    <th>Username</th>
+    <th>Phone Number</th>
     <th>Content</th>
     <th>Regdate</th>
   </tr>
   <tr>
-    <td>${boardVO.seq}</td>
-    <td>${boardVO.category}</td>
     <td>${boardVO.title}</td>
     <td>${boardVO.writer}</td>
+    <td>${boardVO.publisher}</td>
+    <td>${boardVO.publication_date}</td>
+    <td>${boardVO.username}</td>
+    <td>${boardVO.phone}</td>
     <td>${boardVO.content}</td>
     <td>${boardVO.regdate}</td>
   </tr>

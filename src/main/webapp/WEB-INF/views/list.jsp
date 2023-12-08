@@ -21,22 +21,22 @@
     <h1>게시판</h1>
     <table id="list" width="90%">
         <tr>
-            <th>Id</th>
-            <th>Category</th>
             <th>Title</th>
             <th>Writer</th>
-            <th>Content</th>
+            <th>Publisher</th>
+            <th>Username</th>
+            <th>Price</th>
             <th>Regdate</th>
             <th>Edit</th>
             <th>Delete</th>
         </tr>
         <c:forEach items="${list}" var="u">
             <tr>
-                <td>${u.seq}</td>
-                <td>${u.category}</td>
                 <td ><a href="view/${u.seq}">${u.title}</a></td>
                 <td>${u.writer}</td>
-                <td>${u.content}</td>
+                <td>${u.publisher}</td>
+                <td>${u.username}</td>
+                <td>${u.price}</td>
                 <td>${u.regdate}</td>
                 <td><a href="editform/${u.seq}">Edit</a></td>
                 <td><a href="javascript:delete_ok('${u.seq}')">Delete</a></td>

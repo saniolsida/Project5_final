@@ -79,14 +79,24 @@
   <div id="block">
     <div id="block_text">
     <table id ="edit">
-      <tr><td>Username</td><td><form:input path="username"/> </td></tr>
-      <tr><td>Phone Number</td><td><form:input path="phone"/> </td></tr>
-      <tr><td>Price</td><td><form:input path="price"/> </td></tr>
-      <tr><td>Title</td><td><form:input path="title"/> </td></tr>
-      <tr><td>Writer</td><td><form:input path="writer"/></td></tr>
-      <tr><td>Publisher</td><td><form:input path="publisher"/> </td></tr>
-      <tr><td>Publication Date</td><td><form:input path="publication_date"/> </td></tr>
-      <tr><td>Content</td><td><form:textarea path="content" cols="50" row="5" /></td></tr>
+      <tr><td>책 제목</td><td><form:input path="title"/> </td></tr>
+      <tr><td>책 설명</td><td><form:textarea path="content" cols="50" row="5" /></td></tr>
+      <tr><td>저자</td><td><form:input path="writer"/></td></tr>
+      <tr><td>출판사</td><td><form:input path="publisher"/> </td></tr><tr>
+      <td>발행일</td><td><form:input path="publication_date" type="date" /></td></tr>
+      <tr><td>장르</td><td><form:input path="genre"/> </td></tr><tr>
+      <td>책 상태</td>
+      <td><form:select path="bookCondition">
+        <form:option value="깨끗함" label="깨끗함" />
+          <form:option value="필기감 있음" label="필기감 있음" />
+        </form:select>
+      </td>
+    </tr>
+      <tr><td>판매자</td><td><form:input path="username"/> </td></tr>
+      <tr><td>판매자 연락처</td><td><form:input path="phone"/> </td></tr>
+      <tr><td>가격</td><td><form:input path="price"/> </td></tr>
+      <tr><td>직접 거래 가능 여부</td><td><label><form:checkbox path="direct" value="1" /> 가능</label></td></tr>
+
     </table>
 
       <input type="submit" value="수정하기"/>

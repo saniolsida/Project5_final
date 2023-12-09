@@ -27,6 +27,7 @@
         .container{
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
             background-color: white;
             grid-gap: 20px;
         }
@@ -79,9 +80,9 @@
             <div id="block_text">
                 <h4><a href="view/${u.seq}">${u.title}</a></h4>
                 <h4>저자 : ${u.writer}</h4>
-                <h4>출판사 :${u.publisher}</h4>
-                <h4>등록자 : ${u.username}</h4>
-                <h4>가격 : ${u.price}</h4>
+                <h4>가격 : ${u.price}원</h4>
+                <h4>책 상태 : ${u.bookCondition}</h4>
+                <h4>판매자 : ${u.username}</h4>
 <%--                <h4>등록 일자 : ${u.regdate}</h4>--%>
                 <h4><a href="editform/${u.seq}">Edit</a></h4>
                 <h4><a href="javascript:delete_ok('${u.seq}')">Delete</a></h4>

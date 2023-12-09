@@ -66,14 +66,33 @@
       <div id="block">
         <div id="block_text">
           <table id="edit">
-            <tr><td>Username</td><td><input type="text" name="username"/></td></tr>
-            <tr><td>Phone Number</td><td><input type="text" name="phone"/></td></tr>
-            <tr><td>Price</td><td><input type="text" name="price"/></td></tr>
-            <tr><td>Title</td><td><input type="text" name="title"/></td></tr>
-            <tr><td>Writer</td><td><input type="text" name="writer"/></td></tr>
-            <tr><td>Publisher</td><td><input type="text" name="publisher"/></td></tr>
-            <tr><td>Publication Date</td><td><input type="text" name="publication_date"/></td></tr>
-            <tr><td>Content</td><td><textarea cols="50" rows="5" name="content"></textarea></td></tr>
+            <tr><td>책 제목</td><td><input type="text" name="title"/></td></tr>
+            <tr><td>책 설명</td><td><textarea cols="50" rows="5" name="content"></textarea></td></tr>
+            <tr><td>저자</td><td><input type="text" name="writer"/></td></tr>
+            <tr><td>출판사</td><td><input type="text" name="publisher"/></td></tr> <tr>
+            <td>발행일</td><td><input type="date" name="publication_date" /></td></tr>
+            <tr>
+              <td>장르</td>
+              <td>
+                <label><input type="radio" name="genre" value="전공서적"/>전공서적</label>
+                <label><input type="radio" name="genre" value="교양서적"/>교양서적</label>
+                <label><input type="radio" name="genre" value="기독서적"/>기독서적</label>
+              </td>
+            </tr>
+            <tr>
+              <td>책 상태</td>
+              <td>
+                <select name="bookCondition">
+                  <option value="깨끗함">깨끗함</option>
+                  <option value="필기감 있음">필기감 있음</option>
+                </select>
+              </td>
+            </tr>
+            <tr><td>판매자</td><td><input type="text" name="username"/></td></tr>
+            <tr><td>판매자 연락처</td><td><input type="text" name="phone"/></td></tr>
+            <tr><td>가격</td><td><input type="text" name="price"/></td></tr>
+            <tr><td>직접 거래 가능 여부</td><td><label><input type="checkbox" name="direct" value="1"/> 가능</label></td>
+            </tr>
           </table><br>
           <button type="button" onclick="location.href='list'">목록보기</button>
           <button type="submit">등록하기</button>

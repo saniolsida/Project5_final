@@ -25,7 +25,7 @@
       /*margin: 10px;*/
       margin-top: 30px;
       width: 550px;
-      height: 500px;
+      height: 550px;
       border: 5px solid rgb(128, 128, 128);
       border-radius: 5%;
       background-color: white;
@@ -74,8 +74,12 @@
           <h4>저자 | ${boardVO.writer}</h4>
           <h4>출판사 | ${boardVO.publisher}</h4>
           <h4>발행일 | ${boardVO.publication_date}</h4>
+          <h4>장르 | ${boardVO.genre}</h4>
+          <h4>책 상태 | ${boardVO.bookCondition}</h4>
+          <h4>가격 | ${boardVO.price}원</h4>
           <h4>판매자 | ${boardVO.username}</h4>
           <h4>판매자 번호 | ${boardVO.phone}</h4>
+          <h4>직접거래 가능여부 | ${boardVO.direct}</h4>
           <h4>등록 일자 | ${boardVO.regdate}</h4>
         </div>
       </div>
